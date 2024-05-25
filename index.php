@@ -5,13 +5,19 @@ $sentencia=$conexion->prepare("SELECT * FROM  `tbl_servicios` ");
 $sentencia->execute();
 $lista_servicios=$sentencia->fetchAll(PDO::FETCH_ASSOC);
 ?>
-
+<?php $url_base="http://localhost/website/admin/";?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aromas de mi tierra</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -29,6 +35,21 @@ $lista_servicios=$sentencia->fetchAll(PDO::FETCH_ASSOC);
         <a href="portafolio.php">Portafolio</a>
         <a href="#">Comprar</a>
         <a href="#">Equipo</a>
+        <li class="adminlist nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Administrar
+          </a>
+          <ul class="dropdown-menu">
+          <li><a class="nav-item nav-link" href="<?php echo $url_base;?>secciones/servicios/">Servicios</a></li>
+          <li><a class="nav-item nav-link" href="<?php echo $url_base;?>secciones/portafolio/">Portafolio</a></li>
+          <li><a class="nav-item nav-link" href="<?php echo $url_base;?>secciones/entradas/">Entradas</a></li>
+          <li><a class="nav-item nav-link" href="<?php echo $url_base;?>secciones/equipo/">Equipo</a></li>
+          <li><a class="nav-item nav-link" href="<?php echo $url_base;?>secciones/configuraciones/">Configuraciones</a></li>
+          <li><a class="nav-item nav-link" href="<?php echo $url_base;?>secciones/usuarios/">Usuarios</a></li>
+          <li><a class="nav-item nav-link" href="<?php echo $url_base;?>login.php">Cerrar sesión</a></li>
+
+          </ul>
+        </li>
       </nav>
 
       <div class="contenedor-logo">
@@ -136,5 +157,6 @@ $lista_servicios=$sentencia->fetchAll(PDO::FETCH_ASSOC);
         <span class="footer-instagram">Instagram</span>
       </a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
