@@ -31,9 +31,7 @@
                     <a class="nav-item nav-link" href="<?php echo $url_base;?>secciones/entradas/"">Entradas</a>
                     <a class="nav-item nav-link" href="<?php echo $url_base;?>secciones/equipo/"">Equipo</a>
                     <a class="nav-item nav-link" href="<?php echo $url_base;?>secciones/configuraciones/"">Configuraciones</a>
-                    <?php if ($usuario_autenticado && $rol_usuario == "admin"): ?>
-                        <a class="nav-item nav-link" href="<?php echo $url_base; ?>secciones/usuarios/">Usuarios</a>
-                    <?php endif; ?>
+                    <a class="nav-item nav-link" href="<?php echo $url_base; ?>secciones/usuarios/">Usuarios</a>
                     <a class="nav-item nav-link" href="<?php echo $url_base;?>login.php"">Cerrar sesión</a>
                 </div>
             </nav>

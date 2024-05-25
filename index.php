@@ -4,9 +4,6 @@ include("admin/bd.php");
 $sentencia=$conexion->prepare("SELECT * FROM  `tbl_servicios` ");
 $sentencia->execute();
 $lista_servicios=$sentencia->fetchAll(PDO::FETCH_ASSOC);
-
-
-
 ?>
 
 <!DOCTYPE html>

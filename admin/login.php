@@ -63,14 +63,6 @@
                                         placeholder=""
                                     />
                                 </div>
-                                <div class="mb-3">
-                                    <label for="rol" class="form-label">rol</label>
-                                    <select name="rol" id="rol">
-                                        <option value="1">administrador</option>
-                                        <option value="0">usuario</option>
-                                    </select>
-                                </div>
-
                                 
                                 <a
                                     name=""
