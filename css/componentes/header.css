@@ -1,0 +1,76 @@
+header {
+  width: 100%;
+  background-color: var(--blanco);
+  height: 10rem;
+  display: flex;
+  z-index: 10;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0 2rem 0 2rem;
+  align-items: center;
+}
+
+#menu-principal {
+  font-family: "Monserrat-bold";
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cafe);
+}
+
+.contenedor-logo {
+  width: 8rem;
+}
+
+.contenedor-logo__img {
+  width: 100%;
+}
+
+.contenedor-icono-bolsa {
+  font-size: 3rem;
+  margin-left: 6rem;
+}
+
+.icono-bolsa {
+  color: var(--cafe);
+}
+
+@media screen and (min-width: 768px) {
+    header{
+        height: 13rem;
+    }
+    #menu-principal{
+        font-size: 1.7rem;
+    }
+    a{
+        margin: 0.5rem;
+    }
+    .contenedor-logo{
+        width: 10rem;
+    }
+    .contenedor-icono-bolsa {
+        margin-left: 5rem;
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+  header{
+    display: flex;
+  }
+  .contenedor-logo{
+    order: -1;
+  }
+
+  #menu-principal {
+    flex-direction: row;
+  }
+
+  a{
+    margin: 2.5rem;
+  }
+}

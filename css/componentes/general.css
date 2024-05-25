@@ -1,0 +1,28 @@
+:root{
+    --blanco : #FFFFFF;
+    --crema:#EBD3BB;
+    --cafe: #512615;
+    --negro :#000000;
+}
+@font-face {
+    font-family: 'Monserrat-bold' ;
+    src: url("../../fuente/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: 'Monserrat-italic' ;
+    src: url("../../fuente/Montserrat-Italic.ttf");
+}
+@font-face {
+    font-family: 'Monserrat-light' ;
+    src: url("../../fuente/Montserrat-Light.ttf");
+}
+@font-face {
+    font-family: 'Monserrat' ;
+    src: url("../../fuente/Montserrat-Regular.ttf");
+}
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+html{font-size: 62.5%;}
+body{font-size: 2.2rem;
+background-color: var(--blanco);
+font-family: 'Monserrat';}

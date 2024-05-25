@@ -1,0 +1,21 @@
+footer{
+    width: 100%;
+    background-color: var(--crema);
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    align-items: center;
+}
+
+.cafe-corazon{
+    width: 6rem;
+}
+
+@media screen and (min-width:768px) {
+    footer{
+        font-size: 3rem;
+    }
+    .cafe-corazon{
+        width: 7rem;
+    }
+}

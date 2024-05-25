@@ -1,0 +1,38 @@
+.section-video {
+  display: none;
+}
+.contenedor-video {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  width: 100%;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .contenedor-padre-desktop{
+    display: flex;
+  }
+  .section-video {
+    display: inline;
+    display: flex;
+    padding-top: 13rem;
+    height: 55rem;
+    width: 100%;
+  }
+  .contenedor-img-desktop{
+    display: inline;
+  }
+
+  .imagen-cafe-desktop{
+    display: inline;
+    width: 100%;
+    height: 100rem;
+    object-fit: cover;
+    object-position: 68%;
+  }
+}

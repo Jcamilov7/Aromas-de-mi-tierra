@@ -1,0 +1,30 @@
+@import url("../componentes/general.css");
+@import url("../componentes/header.css");
+@import url("../componentes/moliendas.css");
+@import url("../componentes/footer.css");
+@import url("../componentes/mapa.css");
+
+header{
+    background-color: var(--crema);
+}
+
+.contenedor-moliendas{
+    padding-top: 13rem;
+}
+
+.contenedor-boton{
+    display: flex;
+    justify-content: center;
+}
+
+.button-comprar{
+    margin-bottom: 2.5rem;
+    background-color: var(--cafe);
+    font-family: 'Monserrat-bold';
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: var(--blanco);
+    border: none;
+    cursor: pointer;
+}

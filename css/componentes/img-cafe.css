@@ -1,0 +1,55 @@
+.texto-cafe {
+  display: none;
+}
+
+.contenedor-img-cafe {
+  display: flex;
+  justify-content: center;
+  padding: 10rem 0 0 0;
+  height: 40rem;
+  width: 100%;
+}
+
+.imagen-cafe {
+  width: 100%;
+}
+
+.contenedor-img-desktop{
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  .contenedor-img-cafe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12rem;
+    height: 60rem;
+    background-image: url("../../Imagenes/imagen-cafe.avif");
+    min-height: 30rem;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .texto-cafe {
+    display: inline;
+    font-size: 4.5rem;
+    color: var(--blanco);
+    font-family: "Monserrat-bold";
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    letter-spacing: 0.2rem;
+  }
+
+  .imagen-cafe {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contenedor-img-cafe{
+    display: none;
+  }
+
+}

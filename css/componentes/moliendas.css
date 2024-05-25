@@ -1,0 +1,45 @@
+.contenedor-moliendas{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+
+.moliendas{
+    background-color: var(--blanco);
+    padding: 3.2rem 0.8rem;
+    width: 100%;
+}
+
+.titulo-moliendas{
+    font-size: 1.5rem;
+    color: var(--cafe);
+    font-family: 'Monserrat';
+}
+
+.imagenes-molienda{
+    width: 100%;
+    border-radius: 0.2rem;
+    margin-top: 2rem;
+}
+
+.text-moliendas{
+    font-size: 1.2rem;
+    font-family: 'Monserrat-light';
+    margin-top: 0.5rem;
+}
+
+@media screen and (min-width:768px) {
+    .moliendas{
+        padding: 2rem;
+    }
+    .titulo-moliendas{
+        font-size: 2.3rem;
+    }
+    .imagenes-molienda{
+        width: 20rem;
+    }
+    .text-moliendas{
+        font-size: 1.7rem;
+    }
+}
