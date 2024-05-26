@@ -1,3 +1,11 @@
+<?php
+include("admin/bd.php");
+
+$sentencia=$conexion->prepare("SELECT * FROM  `tbl_portafolio` ");
+$sentencia->execute();
+$lista_portafolio=$sentencia->fetchAll(PDO::FETCH_ASSOC);
+?>
+<?php $url_base="http://localhost/website/admin/";?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -29,31 +37,16 @@
       </header>
 
       <main class="contenedor-moliendas">
+      <?php foreach($lista_portafolio as $registros){ ?>
         <section class="moliendas" >
-          <h2 class="titulo-moliendas" >Molienda Fina</h2>
-          <img class="imagenes-molienda" src="Imagenes/molienda-fina.jpg" alt="imagen-1">
-          <article class="text-moliendas" >
-            Textura de sal de mesa ideal para cafetera espresso e italiana. Puedes moler más fino aún si eres usuario de una cafetera turca.
+          <h2 class="titulo-moliendas" ><?php echo $registros["titulo"];?></h2>
+          <img class="imagenes-molienda" src="Imagenes/<?php echo $registros["imagen"];?>" alt="imagen-1">
+          <article class="text-moliendas" ><?php echo $registros["descripcion"];?>
           </article>
         </section>
+        <?php } ?>
+
         
-        <section class="moliendas" >
-          <h2 class="titulo-moliendas" >Molienda Media</h2>
-          <img class="imagenes-molienda" src="Imagenes/molienda-media.jpg" alt="imagen-2">
-          <article class="text-moliendas" >
-            Textura de azúcar moreno compatible con métodos de goteo con filtro de fondo plano como Kalita Wave, cafeteras automáticas de goteo y cafeteras de sifón.
-          </article>
-        </section>
-
-        <section class="moliendas" >
-          <h2 class="titulo-moliendas" >Molienda Gruesa</h2>
-          <img class="imagenes-molienda" src="Imagenes/molienda-gruesa.jpg" alt="imagen-3">
-          <article class="text-moliendas" >
-            Textura un poco más gruesa que la sal gruesa ideal para prensa francesa. Puedes moler un poquito más grueso para café infusionado en frío (cold brew).
-          </article>
-        </section>
-      </main>
-
       <div class="contenedor-boton">
         <button class="button-comprar" type="button">Comprar</button>
       </div>
